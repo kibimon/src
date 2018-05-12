@@ -31,8 +31,10 @@ This text is `code`.
  >  This is a blockquote.
  >  This is the second line of the blockquote.
 
- >  **Note:**
- >  This is a blockquote which contains a note.
+<div role="note" markdown="block">
+**Note:**
+This is a note.
+</div>
 
 + This is a shortlist
 + It has three items
