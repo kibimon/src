@@ -1,6 +1,6 @@
 title : SRC
-project : MonStrPub
 repository : kibimon/src
 kramdown:
   toc_levels: 2..4
-  no_auto_typographic: true
+  gfm_quirks: no_auto_typographic
+  smart_quotes: apos,apos,quot,quot

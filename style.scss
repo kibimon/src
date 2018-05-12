@@ -59,7 +59,7 @@
 
 ASIDE {
 	Padding: 0 2EM;
-	Color: MediumSeaGreen;
+	Color: SeaGreen;
 	Background: Honeydew;
 	Font-Style: Italic;
 	Overflow: Auto;
@@ -95,6 +95,8 @@ DD {
 	Margin: 0 0 0 2EM;
 	Padding: 0;
 
+	&:Last-Child { Margin-Bottom: 1EM }
+
 	*:First-Child { Margin-Top: 0 }
 	*:Last-Child { Margin-Bottom: 0 }
 
@@ -112,15 +114,16 @@ DEL {
 }
 DFN { Font-Weight: Bold }
 DL {
+	Display: Block;
 	Margin: 1EM 0;
 	Border-Left: Thick DarkGoldenrod Solid;
-	Padding: 1EM 2EM;
+	Padding: 0 2EM;
 	Color: DarkSlateGray;
 	Background: LightGoldenrodYellow;
 	Overflow: Auto;
 }
 DT {
-	Margin: 0;
+	Margin: 1EM 0 0;
 	Color: Black;
 	Font-Weight: Bold;
 }
