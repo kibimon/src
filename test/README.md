@@ -36,6 +36,10 @@ This text is `code`.
 This is a note.
 </div>
 
+<div class="pull" markdown="block">
+This is a block of particularly meaningful text.
+</div>
+
 + This is a shortlist
 + It has three items
 + Third item

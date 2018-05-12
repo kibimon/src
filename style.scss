@@ -49,6 +49,12 @@
 	*.s { Color: DarkOrchid }
 	*.s2 { Color: DarkGoldenrod }
 }
+*.pull {
+	Margin: 2EM 0;
+	Padding: 0 2EM;
+	Font-Size: Larger;
+	Text-Align: Center;
+}
 *[Role="note"] {
 	Margin: 1EM 0;
 	Border-Left: Thick MediumOrchid Solid;
