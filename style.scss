@@ -90,7 +90,10 @@ CODE {
 		Color: Inherit;
 	}
 }
-DD { Margin-Bottom: 1EM;
+DD {
+	Display: List-Item;
+	Margin: 0 0 0 2EM;
+	Padding: 0;
 
 	*:First-Child { Margin-Top: 0 }
 	*:Last-Child { Margin-Bottom: 0 }
@@ -111,13 +114,13 @@ DFN { Font-Weight: Bold }
 DL {
 	Margin: 1EM 0;
 	Border-Left: Thick DarkGoldenrod Solid;
-	Padding: 0 2EM;
+	Padding: 1EM 2EM;
 	Color: DarkSlateGray;
 	Background: LightGoldenrodYellow;
 	Overflow: Auto;
 }
 DT {
-	Margin-Top: 1EM;
+	Margin: 0;
 	Color: Black;
 	Font-Weight: Bold;
 }
