@@ -1,0 +1,176 @@
+---
+---
+
+#page-header {
+	Display: Block;
+	Display: Flex;
+	Flex-Direction: Row;
+	Align-Items: Center;
+	Position: Absolute;
+	Top: 0;
+	Left: 0;
+	Right: 0;
+	Margin: 0;
+	Border: None;
+	Padding: 1.5EM 6EM;
+	Height: 6.5EM;
+	Font-Size: 1EM;
+	Color: White;
+	Background: DarkGreen;
+
+	#page-links {
+		Display: Inline-Block;
+		Margin: 0 0 0 Auto;
+	}
+	#page-project {
+		Display: Inline-Block;
+		Font-Size: 2.5EM;
+		Line-Height: 1.4;
+	}
+	#page-site { Font-Style: Italic }
+
+	*|*:link,
+	*|*:visited {
+		Color: Inherit;
+		Text-Decoration: None;
+	}
+	*|*:link:hover,
+	*|*:visited:hover { Text-Decoration: Underline }
+}
+
+*.highlight {
+	*.c { Color: DarkRed }
+	*.kc { Color: Firebrick }
+	*.mi { Color: SeaGreen }
+	*.mf { Color: MediumSeaGreen }
+	*.na { Color: DarkGoldenrod }
+	*.nt { Color: Indigo }
+	*.p { Color: Indigo }
+	*.s { Color: DarkOrchid }
+	*.s2 { Color: DarkGoldenrod }
+}
+
+*|*:link { Color: DarkSlateBlue }
+*|*:link:hover { Color: SlateBlue }
+*|*:link:active { Color: BlueViolet }
+*|*:visited { Color: MediumSlateBlue }
+*|*:visited:hover { Color: MediumPurple }
+*|*:visited:active { Color: DarkOrchid }
+
+ASIDE {
+	Padding: 0 2EM;
+	Color: MediumSeaGreen;
+	Background: Honeydew;
+	Font-Style: Italic;
+	Overflow: Auto;
+}
+BLOCKQUOTE {
+	Margin: 1EM 0;
+	Border-Left: Thick MediumOrchid Solid;
+	Padding: 0 0 0 2EM;
+	Color: Indigo;
+	Background: Thistle;
+	Overflow: Auto;
+}
+BODY {
+	Box-Sizing: Content-Box;
+	Margin: Auto;
+	Border: None;
+	Padding: 6.5EM 6EM 11EM;
+	Max-Width: 43EM;
+	Font-Size: 1EM;
+}
+CODE {
+	Border: Thin CurrentColor Solid;
+	Color: DarkSlateBlue;
+	Background: GhostWhite;
+
+	PRE & {
+		Border: None;
+		Color: Inherit;
+	}
+}
+DD { Margin-Bottom: 1EM;
+
+	*:First-Child { Margin-Top: 0 }
+	*:Last-Child { Margin-Bottom: 0 }
+
+	P { Margin: 0;
+
+		& + P { Text-Indent: 2EM;
+
+			& > * { Text-Indent: 0 }
+		}
+	}
+}
+DEL {
+	Color: DarkGoldenrod;
+	Text-Decoration: Line-Through;
+}
+DFN { Font-Weight: Bold }
+DL {
+	Margin: 1EM 0;
+	Border-Left: Thick DarkGoldenrod Solid;
+	Padding: 0 2EM;
+	Color: DarkSlateGray;
+	Background: LightGoldenrodYellow;
+	Overflow: Auto;
+}
+DT {
+	Margin-Top: 1EM;
+	Color: Black;
+	Font-Weight: Bold;
+}
+H1,
+H2,
+H3,
+H4,
+H5,
+H6 {
+	Color: Indigo;
+	Text-Align: Left;
+	Text-Transform: None;
+}
+HTML {
+	Margin: 0;
+	Border: None;
+	Padding: 6.5EM 0 0;
+}
+INS {
+	Color: DodgerBlue;
+	Text-Decoration: Underline;
+}
+PRE {
+	Border-Style: Solid;
+	Border-Color: MediumOrchid;
+	Border-Width: Thin Thin Thin Thick;
+	Color: DarkSlateBlue;
+	Background: GhostWhite;
+}
+TABLE {
+	Margin-Left: Auto;
+	Margin-Right: Auto;
+	Border: Thin DarkSlateBlue Solid;
+	Border-Collapse: Collapse;
+}
+TH {
+	Box-Sizing: Border-Box;
+	Border: Thin DarkSlateBlue Solid;
+	Padding: .25EM .125EM;
+	Min-Width: 4EM;
+	Font-Weight: Bold;
+}
+THEAD {
+	Color: DarkGreen;
+	Background: GhostWhite;
+}
+TD {
+	Box-Sizing: Border-Box;
+	Border: Thin DarkSlateBlue Solid;
+	Padding: .25EM .125EM;
+	Min-Width: 4EM;
+}
+TFOOT {
+	Color: DarkSlateBlue;
+	Background: MintCream;
+}

@@ -1,4 +1,6 @@
-title : monstr.pub src
+title : SRC
+project : MonStrPub
+repository : kibimon/src
 kramdown:
   toc_levels: 2..4
   no_auto_typographic: true
