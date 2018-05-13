@@ -178,6 +178,9 @@ TABLE {
 	Border: Thin DarkSlateBlue Solid;
 	Border-Collapse: Collapse;
 }
+DD TABLE,
+DT TABLE,
+LI TABLE { Width: 100% }
 TH {
 	Box-Sizing: Border-Box;
 	Border: Thin DarkSlateBlue Solid;
