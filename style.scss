@@ -120,13 +120,22 @@ BODY {
 	Font-Size: 1EM;
 }
 CODE {
-	Border: Thin CurrentColor Solid;
+	Display: Inline-Block;
+	Margin: -1PX;
+	Border: 1PX CurrentColor Solid;
+	Padding: 0 .125EM;
 	Color: DarkSlateBlue;
 	Background: GhostWhite;
 
+	*|*:link &,
+	*|*:visited & { Color: Inherit }
+
 	PRE & {
+		Margin: 0;
 		Border: None;
+		Padding: 0;
 		Color: Inherit;
+		Background: Transparent;
 	}
 }
 DD {
