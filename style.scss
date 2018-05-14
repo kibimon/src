@@ -49,6 +49,22 @@
 	*.s { Color: DarkOrchid }
 	*.s2 { Color: DarkGoldenrod }
 }
+*.optlist { Padding: 0;
+
+	& > * {
+		Display: Inline-Block;
+		Border-Style: None Solid None None;
+		Border-Color: Transparent CurrentColor Transparent Transparent;
+		Border-Width: 0 Thin 0 0;
+		Padding: .25EM .125EM;
+
+		&:First-Child { Padding-Left: 0 }
+		&:Last-Child {
+			Padding-Right: 0;
+			Border-Right: None;
+		}
+	}
+}
 *.pull {
 	Margin: 2EM 0;
 	Padding: 0 2EM;
