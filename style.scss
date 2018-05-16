@@ -177,15 +177,17 @@ DL {
 		Border: None;
 		Padding: 0;
 		Color: Inherit;
+		Background: Transparent;
+		Overflow: Visible;
 
 		& > DT {
 			Display: Inline;
 			Margin: 0;
 			Color: DarkGreen;
 
-			&:First-Child::BEFORE,
-			DD + &::BEFORE { Content: "☞" }
-			DT + &::BEFORE { Content: " , "}
+			&:First-Child::BEFORE { Content: "☞ " }
+			& + DD::BEFORE { Content: " : " }
+			& + DT::BEFORE { Content: " , "}
 		}
 
 		& > DD {
@@ -203,7 +205,7 @@ DL {
 				Display: List-Item;
 				Margin: 0 0 0 2EM;
 			}
-			DT + &::BEFORE { Content: " : " }
+			& + DT::BEFORE { Content: "☞ " }
 		}
 	}
 }
