@@ -86,12 +86,12 @@
 	Background: Thistle;
 	Overflow: Auto;
 }
-*|*:link { Color: DarkSlateBlue }
-*|*:link:hover { Color: SlateBlue }
-*|*:link:active { Color: BlueViolet }
-*|*:visited { Color: MediumSlateBlue }
-*|*:visited:hover { Color: MediumPurple }
-*|*:visited:active { Color: DarkOrchid }
+*|*:Link { Color: DarkSlateBlue }
+*|*:Link:Hover { Color: SlateBlue }
+*|*:Link:Active { Color: BlueViolet }
+*|*:Visited { Color: MediumSlateBlue }
+*|*:Visited:Hover { Color: MediumPurple }
+*|*:Visited:Active { Color: DarkOrchid }
 
 ASIDE {
 	Padding: 0 2EM;
@@ -129,8 +129,8 @@ CODE {
 	Color: DarkSlateBlue;
 	Background: GhostWhite;
 
-	*|*:link &,
-	*|*:visited & { Color: Inherit }
+	*|*:Link &,
+	*|*:Visited & { Color: Inherit }
 
 	PRE & {
 		Margin: 0;
@@ -235,6 +235,8 @@ INS {
 	Color: DodgerBlue;
 	Text-Decoration: Underline;
 }
+*[Role="navigation"],
+NAV { UL { List-Style-Type: None } }
 PRE {
 	Border-Style: Solid;
 	Border-Color: MediumOrchid;
