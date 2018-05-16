@@ -51,6 +51,7 @@
 }
 *.optlist { Padding: 0;
 
+	&::BEFORE { Content: "\200B" }
 	&::AFTER {
 		Display: Block;
 		Clear: Both;
