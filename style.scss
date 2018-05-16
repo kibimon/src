@@ -80,6 +80,7 @@
 *[Role="note"] {
 	Margin: 1EM 0;
 	Border-Left: Thick MediumOrchid Solid;
+	Border-Right: Thick Thistle Solid;
 	Padding: 0 2EM;
 	Color: Indigo;
 	Background: Thistle;
@@ -101,6 +102,7 @@ ASIDE {
 BLOCKQUOTE {
 	Margin: 1EM 0;
 	Border-Left: Thick DodgerBlue Solid;
+	Border-Right: Thick AliceBlue Solid;
 	Padding: 0 2EM;
 	Color: MidnightBlue;
 	Background: AliceBlue;
@@ -165,10 +167,45 @@ DL {
 	Display: Block;
 	Margin: 1EM 0;
 	Border-Left: Thick DarkGoldenrod Solid;
+	Border-Right: Thick LightGoldenRodYellow Solid;
 	Padding: 0 2EM;
 	Color: DarkSlateGray;
 	Background: LightGoldenrodYellow;
 	Overflow: Auto;
+
+	ASIDE & {
+		Border: None;
+		Padding: 0;
+		Color: Inherit;
+
+		& > DT {
+			Display: Inline;
+			Margin: 0;
+			Color: DarkGreen;
+
+			&:First-Child::BEFORE,
+			DD + &::BEFORE { Content: "☞" }
+			DT + &::BEFORE { Content: " , "}
+		}
+
+		& > DD {
+			Display: Inline;
+			Margin: 0;
+
+			&:Last-Child { Margin: 0 }
+
+			&::After {
+				Display: Block;
+				Margin: 0 0 1EM;
+				Content: "";
+			}
+			DD + & {
+				Display: List-Item;
+				Margin: 0 0 0 2EM;
+			}
+			DT + &::BEFORE { Content: " : " }
+		}
+	}
 }
 DT {
 	Margin: 1EM 0 0;
