@@ -126,9 +126,10 @@ CODE {
 	Display: Inline-Block;
 	Margin: -1PX;
 	Border: 1PX CurrentColor Solid;
-	Padding: 0 .125EM;
+	Padding: .125EM;
 	Color: DarkSlateBlue;
 	Background: GhostWhite;
+	Line-Height: 1;
 
 	*|*:Link &,
 	*|*:Visited & { Color: Inherit }
